@@ -1,0 +1,255 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header{
+   
+    padding: 23px 0 10px 0; 
+    font-family: 'Roboto', sans-serif;   
+    font-weight: 350;
+    font-size: 13px;
+    background: #64596a!important;
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    margin-right: 200px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: transparent !important;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item{
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.jumbotron {
+    height: 160vh;
+    width: 100%;
+    background: url("../img/bg2.jpg")  ;
+    background-size: cover;
+    background-position:center;
+    
+
+}
+
+.banner{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 160px;
+    height:20rem;
+    width: 40rem;
+    padding-top: 5em;
+    background:rgba(132, 101, 113, 0.384);
+}
+.btn-primary {
+    background-color: rgba(243, 242, 240, 0.788);
+    color: #000000;
+    border-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 70px;
+    padding-right:70px;
+    padding-top:12px ;
+    padding-bottom: 12px; 
+    display: absolute;
+
+}
+.btn-primary:hover{
+    background:whitesmoke;
+    color: black;
+    text-decoration: none;
+    
+}
+ /* Search Style */ 
+ #search {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background:rgba(132, 101, 113,0.8);
+	transition: all 0.5s ease-in-out;
+	transform: translate(0px, -100%) scale(0, 0);
+    opacity: 1;
+
+}
+
+#search.open {
+	transform: translate(0px, 0px) scale(1, 1); 
+    opacity:1;
+    display: block;
+}
+
+#search input[type="search"] {
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0);
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    border: 0px;
+    margin: 0px auto;
+    margin-top: -51px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+}
+#search .btn {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    margin-top: 61px;
+    margin-left: -45px;
+    background: #edecee;
+    color: #e9e9e9;
+    font-size: 15px;
+    border: none;
+}
+#search .btn a{
+    color: black;
+    text-decoration: none;
+}
+#search .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+	background-color: transparent;
+	opacity: 1;
+	padding: 10px 17px;
+	font-size: 27px;
+}
+.services{
+    padding-bottom: 15px;
+    font-size: 17px;
+    border-bottom: 1px solid #e9e9e9;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing:2px;
+   
+}
+
+.card-img-top{
+    opacity: 1;
+    height: 250px;
+    background: cover;
+    width: 100%;
+    display: block;
+    transition: .5s;
+    backface-visibility: hidden;
+  }
+
+  .card{
+      border: 0;
+      padding: 0 10px 0 10px;
+      margin-right: 10px;
+  }
+  .fa-star{
+    color: #e9e9e9;
+}
+  .checked {
+       color: rgb(219, 132, 253);
+   }
+   .product-shop{
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+   .product-name{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.5px;
+}
+   .product-name:hover{
+    text-decoration:none;
+}
+    .btn-secondary {
+    color: #202129;
+    background-color: #f2f2f2;
+    }
+    
+    .btn-secondary:hover {
+      color: #242525;
+      background-color: #fffffd;
+      opacity: 1;
+      box-shadow: #000000 2px 5px 10px;
+
+    }
+    
+    .btn-secondary:active {
+      background-color: #d5d6d6;
+      opacity: 1;
+    }
+    .blog{
+        font: 12px  'Roboto';
+        text-transform: uppercase;
+  
+     }
+  
+     .blog:hover{
+         text-decoration:none;
+  
+     }
+  
+  
+@media only screen and (max-width: 768px){
+    .main-header{
+        padding: 23px 0 10px 0; 
+        text-align: center;
+        font-size: 12px;
+    }
+    .navbar-nav{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .jumbotron{
+        height: 500px;
+        background-size: cover;
+        background-position:center;
+    }
+    .banner{
+            display: none;
+     }
+     .searchTerm {
+        display: none;
+    }
+    .nav .nav-item input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 5px 0 ;
+        border: 0;
+        border-bottom: 1px solid rgb(189, 188, 188);
+      }
+    ::placeholder{
+          font-size: 13px;
+          letter-spacing: 1px;
+      }
+      .card-img-top{
+        opacity: 1;
+        height: 244px;
+        width: 80%;
+        padding-left: 50px;
+        background: cover;
+        display: block;
+        transition: .5s;
+        backface-visibility: hidden;
+      }
+
+
+}
+@media only screen and (min-width: 768px){
+    .nav .nav-item input[type=text] {
+       display: none;}
+}
